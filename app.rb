@@ -2,5 +2,9 @@ require 'sinatra'
 require './config'
 
 get '/' do
-    'hola mundo'
+    erb :index
+end
+
+post '/adivinar' do
+    erb :index
 end
