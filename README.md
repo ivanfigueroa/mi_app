@@ -2,7 +2,7 @@
 
 para ver el reporte de analisis de codigo:
 
-https://kleer-la.github.io/template2_6_5/overview.html#
+https://ivanfigueroa/mi_app/overview.html#
 
 
 ### Para el setup sin docker:
