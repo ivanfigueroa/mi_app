@@ -24,3 +24,12 @@ for unit test:
 
 for acceptance test:
 	cucumber
+
+
+### Collaborators:
+
+Jaime Valdivia - jhvaldivia
+José Pamplona - JosePamplona
+Hector Ortega - hectorob91
+Brian Novillo - briannovillo
+Mario Figueroa - ivanfigueroa
