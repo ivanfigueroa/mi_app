@@ -28,8 +28,9 @@ for acceptance test:
 
 ### Collaborators:
 
-Jaime Valdivia - jhvaldivia
-José Pamplona - JosePamplona
-Hector Ortega - hectorob91
-Brian Novillo - briannovillo
-Mario Figueroa - ivanfigueroa
+
+* Jaime Valdivia - jhvaldivia
+* José Pamplona - JosePamplona
+* Hector Ortega - hectorob91
+* Brian Novillo - briannovillo
+* Mario Figueroa - ivanfigueroa
