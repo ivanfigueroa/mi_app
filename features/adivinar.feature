@@ -24,3 +24,13 @@ Feature: El usuario adivina
   And la letra es "z"
   Then el mensaje es "No está en la palabra"
   And errores indica "2"
+
+  Scenario: El usuario hace 5 intentos fallidos, pierde el juego
+  Given inicio la aplicacion
+  When la letra es "x"
+  And la letra es "z"
+  And la letra es "z"
+  And la letra es "b"
+  And la letra es "z"
+  Then el mensaje es "Game Over"
+  And errores indica "5"

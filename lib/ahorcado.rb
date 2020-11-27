@@ -15,5 +15,9 @@ class Ahorcado
 		
 	def errores
 		@errores
+  end
+    
+  def perdiste
+		@errores >= 5
 	end
 end

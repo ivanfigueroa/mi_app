@@ -15,6 +15,11 @@ post '/adivinar' do
     else
         session[:feedback] = "No está en la palabra"
     end
+
     session[:errores] = session[:ahorcado].errores
+
+    if session[:ahorcado].perdiste
+        session[:feedback] = "Game Over"
+    end
     erb :index
 end
