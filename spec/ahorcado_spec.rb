@@ -5,7 +5,8 @@ describe Ahorcado do
 	it "verificar que la letra 'a' exista en la palabra Ana" do
 		ahorcado = Ahorcado.new("Ana")
 		expect(ahorcado.arriesgar('a')).to eq true
-    end
+  end
+  
   it "verificar que la letra 'x' no existe en la palabra Ana" do
 		ahorcado = Ahorcado.new("Ana")
 		expect(ahorcado.arriesgar('x')).to eq false
@@ -32,21 +33,21 @@ describe Ahorcado do
 		ahorcado.arriesgar('z')
 		ahorcado.arriesgar('x')
 		expect(ahorcado.perdiste).to eq true
-    end
+  end
     
-    it "el usuario acierta con 'a' y la palabra regresa 'a*a' " do
+  it "el usuario acierta con 'a' y la palabra regresa 'a*a' " do
 		ahorcado = Ahorcado.new("ana")
 		ahorcado.arriesgar('a')
 		expect(ahorcado.palabraSecreta).to eq 'a*a'
-    end
+  end
     
-    it "el usuario acierta con 'n' y la palabra regresa '*n*' " do
+  it "el usuario acierta con 'n' y la palabra regresa '*n*' " do
 		ahorcado = Ahorcado.new("ana")
 		ahorcado.arriesgar('n')
 		expect(ahorcado.palabraSecreta).to eq '*n*'
-    end
+  end
     
-    it "el usuario acierta todas las letras" do
+  it "el usuario acierta todas las letras" do
 		ahorcado = Ahorcado.new("ana")
 		ahorcado.arriesgar('n')
 		ahorcado.arriesgar('a')

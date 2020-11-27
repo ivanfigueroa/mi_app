@@ -6,6 +6,8 @@ get '/' do
     ahorcado = Ahorcado.new('ana')
     session[:ahorcado] = ahorcado
     session[:palabraSecreta] = session[:ahorcado].palabraSecreta
+    session[:feedback] = ""
+    session[:errores] = 0
     erb :index
 end
 
