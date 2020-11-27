@@ -34,3 +34,15 @@ Feature: El usuario adivina
   And la letra es "z"
   Then el mensaje es "Game Over"
   And errores indica "5"
+
+  Scenario: El usuario acierta un intento, se completa con esa letra la palabra
+  Given inicio la aplicacion
+  When la letra es "a"
+  Then el mensaje es "Sí está en la palabra"
+  And se muestra la palabra "a*a"
+
+  Scenario: El usuario acierta un intento, se completa con esa letra la palabra
+  Given inicio la aplicacion
+  When la letra es "n"
+  Then el mensaje es "Sí está en la palabra"
+  And se muestra la palabra "*n*"

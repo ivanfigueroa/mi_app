@@ -5,6 +5,7 @@ require './lib/ahorcado.rb'
 get '/' do
     ahorcado = Ahorcado.new('ana')
     session[:ahorcado] = ahorcado
+    session[:palabraSecreta] = session[:ahorcado].palabraSecreta
     erb :index
 end
 
@@ -12,6 +13,7 @@ post '/adivinar' do
     
     if session[:ahorcado].arriesgar(params[:palabra])
         session[:feedback] = "Sí está en la palabra"
+        session[:palabraSecreta] = session[:ahorcado].palabraSecreta
     else
         session[:feedback] = "No está en la palabra"
     end

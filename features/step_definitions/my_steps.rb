@@ -14,3 +14,7 @@ end
 Then("errores indica {string}") do |errores|
     expect(page).to have_css "div#errores", text: errores
 end
+
+Then("se muestra la palabra {string}") do |palabra|
+    expect(page).to have_css "div#palabra", text: palabra
+end

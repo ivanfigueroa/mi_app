@@ -32,5 +32,17 @@ describe Ahorcado do
 		ahorcado.arriesgar('z')
 		ahorcado.arriesgar('x')
 		expect(ahorcado.perdiste).to eq true
+    end
+    
+    it "el usuario acierta con 'a' y la palabra regresa 'a*a' " do
+		ahorcado = Ahorcado.new("ana")
+		ahorcado.arriesgar('a')
+		expect(ahorcado.palabraSecreta).to eq 'a*a'
+    end
+    
+    it "el usuario acierta con 'n' y la palabra regresa '*n*' " do
+		ahorcado = Ahorcado.new("ana")
+		ahorcado.arriesgar('n')
+		expect(ahorcado.palabraSecreta).to eq '*n*'
 	end
 end
