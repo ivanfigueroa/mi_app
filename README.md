@@ -2,7 +2,7 @@
 
 para ver el reporte de analisis de codigo:
 
-https://ivanfigueroa/mi_app/overview.html#
+https://github.com/ivanfigueroa/mi_app/overview.html#
 
 
 ### Para el setup sin docker:
