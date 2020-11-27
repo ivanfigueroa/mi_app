@@ -10,3 +10,7 @@ end
 Then("el mensaje es {string}") do |mensaje|
     expect(page).to have_css "h1", text: mensaje
 end
+
+Then("errores indica {string}") do |errores|
+    expect(page).to have_css "div#errores", text: errores
+end

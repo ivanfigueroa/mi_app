@@ -11,3 +11,9 @@ Feature: El usuario adivina
   Given inicio la aplicacion
   When la letra es "x"
   Then el mensaje es "No está en la palabra"
+
+  Scenario: El usuario puede ingresar 1 letra, si no acierta, el programa suma un error
+  Given inicio la aplicacion
+  When la letra es "x"
+  Then el mensaje es "No está en la palabra"
+  And errores indica "1"
