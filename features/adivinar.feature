@@ -46,3 +46,10 @@ Feature: El usuario adivina
   When la letra es "n"
   Then el mensaje es "Sí está en la palabra"
   And se muestra la palabra "*n*"
+
+  Scenario: El usuario acierta la palabra
+  Given inicio la aplicacion
+  When la letra es "n"
+  And la letra es "a"
+  Then el mensaje es "Adivinaste la palabra secreta"
+  And se muestra la palabra "ana"

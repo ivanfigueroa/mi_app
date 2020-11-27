@@ -23,5 +23,9 @@ post '/adivinar' do
     if session[:ahorcado].perdiste
         session[:feedback] = "Game Over"
     end
+
+    if session[:ahorcado].ganaste
+        session[:feedback] = "Adivinaste la palabra secreta"
+    end
     erb :index
 end

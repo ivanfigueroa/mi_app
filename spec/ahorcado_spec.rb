@@ -44,5 +44,13 @@ describe Ahorcado do
 		ahorcado = Ahorcado.new("ana")
 		ahorcado.arriesgar('n')
 		expect(ahorcado.palabraSecreta).to eq '*n*'
+    end
+    
+    it "el usuario acierta todas las letras" do
+		ahorcado = Ahorcado.new("ana")
+		ahorcado.arriesgar('n')
+		ahorcado.arriesgar('a')
+		expect(ahorcado.ganaste).to eq true
+		expect(ahorcado.palabraSecreta).to eq 'ana'
 	end
 end

@@ -34,4 +34,8 @@ class Ahorcado
             end
         end
     end
+
+    def ganaste
+		@palabra == @progreso
+    end
 end
