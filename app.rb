@@ -10,6 +10,8 @@ post '/adivinar' do
     ahorcado = Ahorcado.new('ana')
     if ahorcado.arriesgar(params[:palabra])
         session[:feedback] = "Sí está en la palabra"
+    else
+        session[:feedback] = "No está en la palabra"
     end
     erb :index
 end

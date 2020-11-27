@@ -3,8 +3,7 @@ class Ahorcado
         @palabra = palabra
     end
 
-	def arriesgar letra
-		true
+	  def arriesgar letra
+        @palabra.include? letra
     end
-		
 end
